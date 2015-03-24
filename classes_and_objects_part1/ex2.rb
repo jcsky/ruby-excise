@@ -1,5 +1,8 @@
 class MyCar
   attr_accessor :color
+  def year
+    @year
+  end
 
   def initialize(year, color, model)
     @year = year
@@ -22,8 +25,8 @@ class MyCar
 end
 
 car1 = MyCar.new(1985,"red","toyota")
-car1.speed_up
-car1.speed_up
-car1.brake
-car1.speed_up
-car1.shut
+p car1.color
+car1.color="yellow"
+p car1.color
+p car1.year
+car1.year="2222"
