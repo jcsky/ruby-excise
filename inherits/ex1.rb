@@ -17,7 +17,17 @@ class Vehicle
   def count
     # puts @@num_vehicle
   end
+  def age
+    "Your #{self.model} is #{years_old} years old."
+  end
+
+  private
+
+  def years_old
+    Time.now.year - self.year
+  end
 end
+
 class MyCar < Vehicle
   def initialize
     super
@@ -51,5 +61,3 @@ truck2=MyTruck.new
 truck3=MyTruck.new
 car1.count
 truck2.count
-# p car1
-# p truck2
