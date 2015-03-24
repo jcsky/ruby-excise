@@ -22,12 +22,11 @@ class MyCar
   end
   def spray_paint(color)
     self.color=color
+    p "#{@model} color now is #{@color}"
   end
 end
 
 car1 = MyCar.new(1985,"red","toyota")
 p car1.color
-car1.color="yellow"
+car1.spray_paint("white")
 p car1.color
-p car1.year
-car1.year="2222"
